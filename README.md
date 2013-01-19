@@ -33,3 +33,9 @@ publishStateMachine.transition() // Start from beginning; go to state 1
 
     npm install
     npm test
+
+## License
+
+Copyright Lauri Lehmijoki
+
+MIT
