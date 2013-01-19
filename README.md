@@ -20,9 +20,9 @@ var secondState = new StateMachine.State(
 })
 
 var publishStateMachine = new StateMachine.CyclicStateMachine([firstState, secondState])
-publishStateMachine.start() # Go to state 1
-publishStateMachine.transition() # Go to state 2
-publishStateMachine.transition() # Start from beginning; go to state 1
+publishStateMachine.start() // Go to state 1
+publishStateMachine.transition() // Go to state 2
+publishStateMachine.transition() // Start from beginning; go to state 1
 ````
 
 ## Development
