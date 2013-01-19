@@ -25,6 +25,10 @@ publishStateMachine.transition() // Go to state 2
 publishStateMachine.transition() // Start from beginning; go to state 1
 ````
 
+## Build
+
+    coffee --compile src
+
 ## Development
 
     npm install
