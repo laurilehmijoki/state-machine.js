@@ -1,5 +1,7 @@
 # state-machine.js – trivial state machine in JavaScript
 
+[![Build Status](https://secure.travis-ci.org/laurilehmijoki/state-machine.js.png)] (http://travis-ci.org/laurilehmijoki/state-machine.js)
+
 ## Usage
 
 ````javascript
