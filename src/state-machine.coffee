@@ -4,10 +4,10 @@ class State
 class CyclicStateMachine
   constructor: (@states) ->
 
-  start: =>
+  start: (startArgument) =>
     @currentStateIndex = 0
     @isStarted = true
-    @currentState().entryAction()
+    @currentState().entryAction(startArgument)
     this
 
   currentState: =>
@@ -15,11 +15,11 @@ class CyclicStateMachine
       throw 'State machine not started. Invoke #start first.'
     @states[@currentStateIndex]
 
-  transition: =>
+  transition: (transitionArgument) =>
     oldState = @currentState()
     @currentStateIndex = @nextStateIndex()
-    oldState.exitAction()
-    @currentState().entryAction()
+    oldState.exitAction(transitionArgument)
+    @currentState().entryAction(transitionArgument)
     this
 
   nextStateIndex: =>
