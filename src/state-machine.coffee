@@ -1,5 +1,5 @@
 class State
-  constructor: (@name, @entryAction, @exitAction) ->
+  constructor: (@entryAction, @exitAction) ->
 
 class CyclicStateMachine
   constructor: (@states) ->

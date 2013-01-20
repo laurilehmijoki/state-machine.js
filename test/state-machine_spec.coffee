@@ -10,8 +10,8 @@ describe 'CyclicStateMachine', ->
     @state1Exit = sinon.spy()
     @state2Entry = sinon.spy()
     @state2Exit = sinon.spy()
-    @state1 = new StateMachine.State 'first state', @state1Entry, @state1Exit
-    @state2 = new StateMachine.State 'second state', @state2Entry, @state2Exit
+    @state1 = new StateMachine.State @state1Entry, @state1Exit
+    @state2 = new StateMachine.State @state2Entry, @state2Exit
 
   context '#start', ->
     it 'should call the entry action of the first state', ->

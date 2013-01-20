@@ -4,7 +4,6 @@
 
 ````javascript
 var firstState = new StateMachine.State(
-  "publishing in progress",
   function () {
     console.log('state entry')
   }, function () {
@@ -12,7 +11,6 @@ var firstState = new StateMachine.State(
 })
 
 var secondState = new StateMachine.State(
-  "publishing completed",
   function () {
     console.log('state entry')
   }, function () {
