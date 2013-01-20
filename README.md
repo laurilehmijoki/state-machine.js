@@ -1,4 +1,4 @@
-# state-machine.js – trivial state machine in JavaScript
+# state-machine.js – trivial state machine
 
 [![Build Status](https://secure.travis-ci.org/laurilehmijoki/state-machine.js.png)] (http://travis-ci.org/laurilehmijoki/state-machine.js)
 
